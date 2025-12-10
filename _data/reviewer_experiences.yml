@@ -1,11 +1,8 @@
-- conference: European Conference on Computer Vision (ECCV)
-  years: 
-    - 2024
+- conference:  ECCV
+  year: 2024
 
-- conference: International Conference on Computer Vision (ICCV)
-  years:
-    - 2025
+- conference: ICCV
+  year: 2025
 
-- conference:  Advances in Neural Information Processing Systems (NeurIPS)
-  years:
-    - 2025
+- conference:  NeurIPS
+  year:  2025
