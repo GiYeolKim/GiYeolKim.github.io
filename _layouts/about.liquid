@@ -77,9 +77,19 @@ layout: default
       {% endif %}
     </div>
 
-    {% if page.reviewer_experiences %}
-      {% include reviewer_experiences.liquid %}
-    {% endif %}
+    <!-- Reviewer Experiences -->
+    <div style="margin-top: 3rem;">
+      {% if page.reviewer_experiences %}
+        {% include reviewer_experiences.liquid %}
+      {% endif %}
+    </div>
+    
+    <!-- Patents -->
+    <div style="margin-top: 3rem;">
+      {% if page.patents %}
+        {% include patents.liquid %}
+      {% endif %}
+    </div>
 
 
 
