@@ -24,8 +24,4 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I am currently a Master’s student in the [Perceptual AI Lab](https://sites.google.com/view/pai-lab/home?authuser=0) at Chung-Ang University, advised by Prof. [Chanho Eom](https://sites.google.com/view/pai-lab/members/faculty?authuser=0). My research focuses on person search, multi-modal retrieval, and diffusion-based generative models. I am broadly interested in building learning systems that can understand complex relationships across heterogeneous modalities, and in developing scalable methods for robust representation learning. If you’re interested in my work or would like to discuss potential collaborations, feel free to reach out.
