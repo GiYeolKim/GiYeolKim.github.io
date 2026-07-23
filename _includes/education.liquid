@@ -1,0 +1,31 @@
+<div class="education">
+  <h2>Education</h2>
+  {% if site.data.education %}
+    <div class="education-list">
+      {% for edu in site.data.education %}
+        <div class="education-entry" style="margin-bottom: 1.5rem;">
+          <div style="font-weight: 600; color: var(--global-text-color);">
+            {{ edu.org }}
+            {% if edu.location %}
+              <span style="font-weight: 400; color: var(--global-text-color-light);"> · {{ edu.location }}</span>
+            {% endif %}
+          </div>
+
+          {% if edu.roles %}
+            {% for role in edu.roles %}
+              <div style="font-size: 0.95rem; margin-top: 0.25rem;">
+                {{ role.title }}
+                <span style="color: var(--global-text-color-light);"> · {{ role.period }}</span>
+              </div>
+            {% endfor %}
+          {% else %}
+            <div style="font-size: 0.95rem; margin-top: 0.25rem;">
+              {{ edu.degree }}
+              <span style="color: var(--global-text-color-light);"> · {{ edu.period }}</span>
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>
