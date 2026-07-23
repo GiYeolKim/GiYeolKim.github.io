@@ -77,6 +77,13 @@ layout: default
       {% endif %}
     </div>
 
+    <!-- Experience -->
+    <div style="margin-top: 5rem;">
+      {% if page.experiences %}
+        {% include experiences.liquid %}
+      {% endif %}
+    </div>
+
     <!-- Reviewer Experiences -->
     <div style="margin-top: 5rem;">
       {% if page.reviewer_experiences %}

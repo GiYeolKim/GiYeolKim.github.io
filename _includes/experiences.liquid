@@ -1,0 +1,41 @@
+<div class="experiences">
+  <h2>Experience</h2>
+  {% if site.data.experiences %}
+    <div class="experience-list">
+      {% for exp in site.data.experiences %}
+        <div class="experience-entry" style="margin-bottom: 1.5rem;">
+          <div style="font-weight: 600; color: var(--global-text-color);">
+            {{ exp.org }}
+            {% if exp.location %}
+              <span style="font-weight: 400; color: var(--global-text-color-light);"> · {{ exp.location }}</span>
+            {% endif %}
+          </div>
+
+          {% if exp.roles %}
+            {% for role in exp.roles %}
+              <div style="font-size: 0.95rem; margin-top: 0.25rem;">
+                {{ role.title }}
+                <span style="color: var(--global-text-color-light);"> · {{ role.period }}</span>
+              </div>
+            {% endfor %}
+          {% else %}
+            <div style="font-size: 0.95rem; margin-top: 0.25rem;">
+              {{ exp.role }}
+              <span style="color: var(--global-text-color-light);"> · {{ exp.period }}</span>
+            </div>
+          {% endif %}
+
+          {% if exp.description %}
+            <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-top: 0.2rem;">
+              {{ exp.description }}{% if exp.note %} · <em>{{ exp.note }}</em>{% endif %}
+            </div>
+          {% elsif exp.note %}
+            <div style="font-size: 0.9rem; color: var(--global-text-color-light); margin-top: 0.2rem;">
+              <em>{{ exp.note }}</em>
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>

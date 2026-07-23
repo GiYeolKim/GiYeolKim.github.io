@@ -1,8 +1,11 @@
-- conference:  ECCV
-  year: 2024
+- conference: CVPR
+  year: 2025, 2026
+
+- conference: ECCV
+  year: 2024, 2026
 
 - conference: ICCV
   year: 2025
 
-- conference:  NeurIPS
-  year:  2025
+- conference: NeurIPS
+  year: 2025, 2026

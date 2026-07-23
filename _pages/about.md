@@ -12,6 +12,7 @@ profile:
   
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
+experiences: true
 reviewer_experiences: true
 patents: true
 
@@ -26,4 +27,4 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am currently a Master’s student in the [Perceptual AI Lab](https://sites.google.com/view/pai-lab/home?authuser=0) at Chung-Ang University, advised by Prof. [Chanho Eom](https://sites.google.com/view/pai-lab/members/faculty?authuser=0). My research focuses on person search, multi-modal retrieval, and diffusion-based generative models. I am broadly interested in building learning systems that can understand complex relationships across heterogeneous modalities, and in developing scalable methods for robust representation learning. If you’re interested in my work or would like to discuss potential collaborations, feel free to reach out.
+I am currently a Ph.D. student in the [Perceptual AI Lab](https://sites.google.com/view/pai-lab/home?authuser=0) at Chung-Ang University, advised by Prof. [Chanho Eom](https://sites.google.com/view/pai-lab/members/faculty?authuser=0). My research focuses on agentic AI, multi-modal large language models, and surveillance systems. I am broadly interested in building learning systems that can understand complex relationships across heterogeneous modalities, and in developing scalable methods for robust representation learning. If you’re interested in my work or would like to discuss potential collaborations, feel free to reach out.

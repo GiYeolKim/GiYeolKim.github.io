@@ -1,0 +1,32 @@
+- org: Chung-Ang University
+  location: Seoul, Korea
+  roles:
+    - title: Ph.D. Student
+      period: Mar. 2026 – Present
+    - title: Master's Student
+      period: Mar. 2024 – Feb. 2026
+
+- org: Smilegate
+  role: Membership AI
+  period: Jul. 2023 – Nov. 2023
+  location: Seongnam, Korea
+  description: Personalized text-to-speech with emotions
+
+- org: SK Telecom
+  role: AI Fellowship
+  period: May 2023 – Nov. 2023
+  location: Seoul, Korea
+  description: Computer vision for automated medical diagnosis
+  note: 2nd Prize (3M KRW)
+
+- org: ETRI
+  role: Research Intern
+  period: Jul. 2023 – Aug. 2023
+  location: Daejeon, Korea
+  description: Self-supervised learning in computer vision
+
+- org: Irvine Tech Hub
+  role: Intern
+  period: Jan. 2023 – Feb. 2023
+  location: Irvine, CA, USA
+  description: Personal profile identification with facial manipulations
