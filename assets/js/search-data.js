@@ -448,13 +448,6 @@ ninja.data = [{
           window.open("mailto:%67%69%79%65%6F%6C%6B%69%6D@%63%61%75.%61%63.%6B%72", "_blank");
         },
       },{
-        id: 'social-github',
-        title: 'GitHub',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://github.com/GiYeolKim", "_blank");
-        },
-      },{
         id: 'social-linkedin',
         title: 'LinkedIn',
         section: 'Socials',
