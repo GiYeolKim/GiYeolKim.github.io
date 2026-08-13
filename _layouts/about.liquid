@@ -3,21 +3,14 @@ layout: default
 ---
 <div class="post">
   <header class="post-header">
-    <div class="about-title-row">
-      <h1 class="post-title">
-        {% if site.title == 'blank' %}
-          <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-          {{ site.last_name }}
-        {% else %}
-          {{ site.title }}
-        {% endif %}
-      </h1>
-      {% if page.social %}
-        <div class="social title-social">
-          <div class="contact-icons">{% include social.liquid %}</div>
-        </div>
+    <h1 class="post-title">
+      {% if site.title == 'blank' %}
+        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+        {{ site.last_name }}
+      {% else %}
+        {{ site.title }}
       {% endif %}
-    </div>
+    </h1>
     <p class="desc">{{ page.subtitle }}</p>
   </header>
 
@@ -41,6 +34,11 @@ layout: default
         {% endif %}
         {% if page.profile.more_info %}
           <div class="more-info">{{ page.profile.more_info }}</div>
+        {% endif %}
+        {% if page.social %}
+          <div class="social profile-social">
+            <div class="contact-icons">{% include social.liquid %}</div>
+          </div>
         {% endif %}
       </div>
     {% endif %}
