@@ -40,7 +40,7 @@
 
           {% if exp.description or exp.note %}
             <div style="margin-top: 0.2rem; font-size: 0.9rem; color: var(--global-text-color-light);">
-              {% if exp.description %}<span style="color: var(--global-text-color);">Research:</span> {{ exp.description }}{% endif %}{% if exp.description and exp.note %} · {% endif %}{% if exp.note %}<em>{{ exp.note }}</em>{% endif %}
+              {% if exp.description %}<span style="color: var(--global-text-color);">Topic:</span> {{ exp.description }}{% endif %}{% if exp.description and exp.note %} · {% endif %}{% if exp.note %}<em>{{ exp.note }}</em>{% endif %}
             </div>
           {% endif %}
         </div>
