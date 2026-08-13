@@ -1,11 +1,12 @@
-- conference: CVPR
-  year: 2025, 2026
+- category: Journal Reviewer
+  items:
+    - IEEE Transactions on Image Processing (TIP), 2024
+    - IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2025
 
-- conference: ECCV
-  year: 2024, 2026
-
-- conference: ICCV
-  year: 2025
-
-- conference: NeurIPS
-  year: 2025, 2026
+- category: Conference Reviewer
+  items:
+    - Advances in Neural Information Processing Systems (NeurIPS), 2025, 2026
+    - IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025, 2026
+    - IEEE/CVF International Conference on Computer Vision (ICCV), 2025
+    - European Conference on Computer Vision (ECCV), 2024, 2026
+    - Annual Meeting of the Association for Computational Linguistics (ACL), 2026
