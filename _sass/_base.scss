@@ -801,6 +801,17 @@ footer.sticky-bottom {
           background-color: var(--global-theme-color);
           margin-bottom: 0.5rem;
           color: var(--global-card-bg-color) !important;
+          font-size: 0.95rem;
+          font-weight: 600;
+          line-height: 1.3;
+          padding: 0.45rem 0.55rem;
+
+          a,
+          div {
+            color: inherit;
+            font-size: inherit;
+            font-weight: inherit;
+          }
 
           a {
             color: white;
