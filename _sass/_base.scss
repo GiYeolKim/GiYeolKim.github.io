@@ -281,6 +281,42 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+.edu-period,
+.exp-period {
+  white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+  .profile.float-right,
+  .profile.float-left {
+    float: none !important;
+    width: 46% !important;
+    max-width: 170px;
+    margin: 0 auto 1.5rem !important;
+  }
+
+  .profile img {
+    width: 100%;
+    max-width: 170px;
+    height: auto;
+  }
+
+  .about-section {
+    padding-top: 3.25rem;
+  }
+
+  .edu-period,
+  .exp-period {
+    white-space: normal;
+  }
+
+  ol.bibliography li .abbr abbr.badge,
+  ol.bibliography li .abbr abbr {
+    font-size: 0.7rem !important;
+    padding: 0.22rem 0.28rem !important;
+  }
+}
+
 .post-description {
   margin-bottom: 2rem;
   font-size: 0.875rem;
