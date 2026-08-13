@@ -1,9 +1,9 @@
 <div class="patents">
   <h2>Patents</h2>
   {% if site.data.patents %}
-    <div class="patent-list">
+    <div class="patent-list" style="margin-top: 1.75rem;">
       {% for patent in site.data.patents %}
-        <div class="patent-entry" style="margin-bottom: 2. 5rem;">
+        <div class="patent-entry" style="margin-bottom: 2.5rem;">
           <div class="patent-header" style="margin-bottom: 0.5rem; color: var(--global-text-color);">
             <span style="font-weight: 600;">{{ patent.number }}</span>
             <span style="color: var(--global-text-color-light); margin-left: 1rem;">
