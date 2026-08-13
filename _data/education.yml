@@ -1,7 +1,15 @@
-- org: Chung-Ang University
+- degree: Ph.D. Student
+  field: Imaging Science
+  org: Chung-Ang University
+  lab: Perceptual AI Lab
+  advisor: Prof. Chanho Eom
+  period: Mar. 2026 – Present
   location: Seoul, Korea
-  roles:
-    - title: Ph.D. Student
-      period: Mar. 2026 – Present
-    - title: Master's Student
-      period: Mar. 2024 – Feb. 2026
+
+- degree: M.S.
+  field: Imaging Science
+  org: Chung-Ang University
+  lab: Perceptual AI Lab
+  advisor: Prof. Chanho Eom
+  period: Mar. 2024 – Feb. 2026
+  location: Seoul, Korea

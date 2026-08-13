@@ -1,27 +1,38 @@
 <div class="education">
   <h2>Education</h2>
   {% if site.data.education %}
-    <div class="education-list">
+    <div class="education-list" style="border-left: 2px solid var(--global-divider-color); margin-left: 0.35rem; padding-left: 1.25rem;">
       {% for edu in site.data.education %}
-        <div class="education-entry" style="margin-bottom: 1.5rem;">
-          <div style="font-weight: 600; color: var(--global-text-color);">
-            {{ edu.org }}
-            {% if edu.location %}
-              <span style="font-weight: 400; color: var(--global-text-color-light);"> · {{ edu.location }}</span>
-            {% endif %}
+        <div class="education-entry" style="position: relative; margin-bottom: {% if forloop.last %}0{% else %}1.75rem{% endif %};">
+          <span
+            style="
+              position: absolute;
+              left: -1.55rem;
+              top: 0.45rem;
+              width: 0.55rem;
+              height: 0.55rem;
+              border-radius: 50%;
+              background: var(--global-theme-color);
+              box-shadow: 0 0 0 3px var(--global-bg-color);
+            "
+          ></span>
+
+          <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.25rem 1rem; align-items: baseline;">
+            <div style="font-weight: 700; font-size: 1.05rem; color: var(--global-text-color);">
+              {{ edu.degree }}{% if edu.field %}, {{ edu.field }}{% endif %}
+            </div>
+            <div style="font-size: 0.9rem; color: var(--global-text-color-light); white-space: nowrap;">
+              {{ edu.period }}
+            </div>
           </div>
 
-          {% if edu.roles %}
-            {% for role in edu.roles %}
-              <div style="font-size: 0.95rem; margin-top: 0.25rem;">
-                {{ role.title }}
-                <span style="color: var(--global-text-color-light);"> · {{ role.period }}</span>
-              </div>
-            {% endfor %}
-          {% else %}
-            <div style="font-size: 0.95rem; margin-top: 0.25rem;">
-              {{ edu.degree }}
-              <span style="color: var(--global-text-color-light);"> · {{ edu.period }}</span>
+          <div style="margin-top: 0.3rem; font-size: 0.95rem; color: var(--global-text-color);">
+            {{ edu.org }}{% if edu.location %}<span style="color: var(--global-text-color-light);"> · {{ edu.location }}</span>{% endif %}
+          </div>
+
+          {% if edu.lab or edu.advisor %}
+            <div style="margin-top: 0.2rem; font-size: 0.9rem; color: var(--global-text-color-light);">
+              {% if edu.lab %}{{ edu.lab }}{% endif %}{% if edu.lab and edu.advisor %}, {% endif %}{% if edu.advisor %}advised by {{ edu.advisor }}{% endif %}
             </div>
           {% endif %}
         </div>
