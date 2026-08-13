@@ -209,34 +209,53 @@ ul.task-list input[type="checkbox"] {
     }
   }
 
-  .social.profile-social {
-    margin-top: 0.9rem;
-    text-align: center;
+}
+
+.about-title-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 2.5rem;
+  margin-bottom: 0.35rem;
+
+  .post-title {
+    margin-bottom: 0;
+  }
+
+  .social.title-social {
+    text-align: right;
+    margin: 0;
+    margin-left: auto;
 
     .contact-icons {
       display: flex;
-      justify-content: center;
+      justify-content: flex-end;
       align-items: center;
-      gap: 0.9rem;
-      font-size: 1.55rem;
+      gap: 1.15rem;
+      font-size: 1.65rem;
 
       a {
         line-height: 1;
 
         img {
-          width: 1.45rem;
-          height: 1.45rem;
+          width: 1.5rem;
+          height: 1.5rem;
           margin-bottom: 0;
         }
 
         svg {
-          width: 1.45rem;
-          height: 1.45rem;
+          width: 1.5rem;
+          height: 1.5rem;
           margin-bottom: 0;
         }
       }
     }
   }
+}
+
+.about-section {
+  margin-top: 7rem;
 }
 
 .profile.float-right {

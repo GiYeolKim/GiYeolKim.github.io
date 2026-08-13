@@ -3,14 +3,21 @@ layout: default
 ---
 <div class="post">
   <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
+    <div class="about-title-row">
+      <h1 class="post-title">
+        {% if site.title == 'blank' %}
+          <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+          {{ site.last_name }}
+        {% else %}
+          {{ site.title }}
+        {% endif %}
+      </h1>
+      {% if page.social %}
+        <div class="social title-social">
+          <div class="contact-icons">{% include social.liquid %}</div>
+        </div>
       {% endif %}
-    </h1>
+    </div>
     <p class="desc">{{ page.subtitle }}</p>
   </header>
 
@@ -35,11 +42,6 @@ layout: default
         {% if page.profile.more_info %}
           <div class="more-info">{{ page.profile.more_info }}</div>
         {% endif %}
-        {% if page.social %}
-          <div class="social profile-social">
-            <div class="contact-icons">{% include social.liquid %}</div>
-          </div>
-        {% endif %}
       </div>
     {% endif %}
 
@@ -63,7 +65,7 @@ layout: default
 
     
     <!-- Selected papers -->
-    <div style="margin-top: 3rem;">
+    <div class="about-section">
       {% if page.selected_papers %}
         <h2>
           <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Publications</a>
@@ -73,28 +75,28 @@ layout: default
     </div>
 
     <!-- Education -->
-    <div style="margin-top: 5rem;">
+    <div class="about-section">
       {% if page.education %}
         {% include education.liquid %}
       {% endif %}
     </div>
 
     <!-- Experience -->
-    <div style="margin-top: 5rem;">
+    <div class="about-section">
       {% if page.experiences %}
         {% include experiences.liquid %}
       {% endif %}
     </div>
 
-    <!-- Reviewer Experiences -->
-    <div style="margin-top: 5rem;">
+    <!-- Reviewer Activities -->
+    <div class="about-section">
       {% if page.reviewer_experiences %}
         {% include reviewer_experiences.liquid %}
       {% endif %}
     </div>
     
     <!-- Patents -->
-    <div style="margin-top: 5rem;">
+    <div class="about-section">
       {% if page.patents %}
         {% include patents.liquid %}
       {% endif %}
