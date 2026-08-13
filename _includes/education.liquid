@@ -1,7 +1,15 @@
 <div class="education">
   <h2>Education</h2>
   {% if site.data.education %}
-    <div class="education-list" style="border-left: 2px solid var(--global-divider-color); margin-left: 0.35rem; padding-left: 1.25rem;">
+    <div
+      class="education-list"
+      style="
+        border-left: 2px solid var(--global-divider-color);
+        margin-top: 1.5rem;
+        margin-left: 0.35rem;
+        padding-left: 1.25rem;
+      "
+    >
       {% for edu in site.data.education %}
         <div class="education-entry" style="position: relative; margin-bottom: {% if forloop.last %}0{% else %}1.75rem{% endif %};">
           <span
