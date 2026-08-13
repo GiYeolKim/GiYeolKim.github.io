@@ -19,20 +19,26 @@
 
           <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.25rem 1rem; align-items: baseline;">
             <div style="font-weight: 700; font-size: 1.05rem; color: var(--global-text-color);">
-              {{ edu.degree }}{% if edu.field %}, {{ edu.field }}{% endif %}
+              {{ edu.degree }}
             </div>
             <div style="font-size: 0.9rem; color: var(--global-text-color-light); white-space: nowrap;">
               {{ edu.period }}
             </div>
           </div>
 
-          <div style="margin-top: 0.3rem; font-size: 0.95rem; color: var(--global-text-color);">
-            {{ edu.org }}{% if edu.location %}<span style="color: var(--global-text-color-light);"> · {{ edu.location }}</span>{% endif %}
+          {% if edu.school %}
+            <div style="margin-top: 0.3rem; font-size: 0.95rem; color: var(--global-text-color);">
+              {{ edu.school }}
+            </div>
+          {% endif %}
+
+          <div style="margin-top: 0.15rem; font-size: 0.92rem; color: var(--global-text-color-light);">
+            {{ edu.org }}{% if edu.location %} · {{ edu.location }}{% endif %}
           </div>
 
           {% if edu.lab or edu.advisor %}
             <div style="margin-top: 0.2rem; font-size: 0.9rem; color: var(--global-text-color-light);">
-              {% if edu.lab %}{{ edu.lab }}{% endif %}{% if edu.lab and edu.advisor %}, {% endif %}{% if edu.advisor %}advised by {{ edu.advisor }}{% endif %}
+              {% if edu.lab %}{{ edu.lab }}{% endif %}{% if edu.lab and edu.advisor %} · {% endif %}{% if edu.advisor %}Advised by {{ edu.advisor }}{% endif %}
             </div>
           {% endif %}
         </div>
