@@ -11,6 +11,7 @@
       "
     >
       {% for edu in site.data.education %}
+        {% if edu.hidden %}{% continue %}{% endif %}
         <div class="education-entry" style="position: relative; margin-bottom: {% if forloop.last %}0{% else %}1.75rem{% endif %};">
           <span
             style="

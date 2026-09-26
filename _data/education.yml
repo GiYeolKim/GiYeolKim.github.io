@@ -7,6 +7,7 @@
   location: Seoul, Korea
 
 - degree: M.S.
+  hidden: true
   school: Graduate School of Advanced Imaging Science, Multimedia & Films (GSAIM)
   org: Chung-Ang University
   lab: Perceptual AI Lab
