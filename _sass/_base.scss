@@ -900,10 +900,11 @@ footer.sticky-bottom {
         }
 
         > em,
-        > strong {
+        > strong,
+        > span.self-author {
           border-bottom: 1px solid;
           font-style: normal;
-          font-weight: 700;
+          font-weight: 400;
         }
 
         > span.more-authors {
