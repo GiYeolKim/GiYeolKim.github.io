@@ -11,8 +11,12 @@
             </span>
           </div>
           <div class="patent-titles" style="font-size: 0.95rem; line-height: 1.7;">
-            <div><strong>[KOR]</strong> {{ patent.title_kor }}</div>
-            <div><strong>[ENG]</strong> {{ patent.title_eng }}</div>
+            {% if patent.title %}
+              <div><strong>[{{ patent.region }}]</strong> {{ patent.title }}</div>
+            {% else %}
+              <div><strong>[KOR]</strong> {{ patent.title_kor }}</div>
+              <div><strong>[ENG]</strong> {{ patent.title_eng }}</div>
+            {% endif %}
           </div>
           {% if patent.inventors or patent.applicant %}
             <div class="patent-info" style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--global-text-color-light); line-height: 1.6;">
@@ -20,7 +24,7 @@
                 <div>{{ patent.inventors }}</div>
               {% endif %}
               {% if patent.applicant %}
-                <div>{{ patent. applicant }}</div>
+                <div>{{ patent.applicant }}</div>
               {% endif %}
             </div>
           {% endif %}
